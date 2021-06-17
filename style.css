@@ -99,7 +99,7 @@ section{
     width: 36%;
 }
 section table,th,td{
-    font-size: 54px;
+    font-size: 3.375rem;    
     border: 5px solid black;
     background-color: white;
 }
@@ -110,9 +110,10 @@ section th,td{
     display: flex;
     justify-content: center;
     align-content: center;
+
 }
 .lht-fb{
-    width: 400px;
+    width: 350px;
 }
 .index-left{
     width: 50%;
@@ -122,4 +123,36 @@ section th,td{
 }
 .index-box{
     padding-top: 20px;
+}
+.map-350{
+    display: none;
+}
+
+@media only screen and (max-width: 830px){
+ .about-box{
+    flex-direction: column;
+ }
+ .about-left,.index-left, .about-right{
+     width: 100%;
+ }
+ .about-right{
+     padding-top: 20px;
+ }
+}
+@media only screen and (max-width: 1000px){
+    .map-350{
+        display: block;
+    }
+    .map-600{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    section th,td{
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 50px;
+    }
 }
